@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='Instragram_walkthrough.mp4' title='Instragram Walkthrough' width='' alt='Video Walkthrough' />
+<img src='ezgif.com-gif-maker(3).gif' title='Instragram Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [Peek]
 
