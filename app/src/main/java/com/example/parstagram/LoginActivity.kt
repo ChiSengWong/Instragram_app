@@ -31,6 +31,7 @@ class LoginActivity : AppCompatActivity() {
             val username = findViewById<EditText>(R.id.et_username).text.toString()
             val password = findViewById<EditText>(R.id.et_password).text.toString()
             signUpUser(username, password)
+
         }
     }
 
@@ -45,6 +46,8 @@ class LoginActivity : AppCompatActivity() {
         user.signUpInBackground { e ->
             if (e == null) {
                 // Hooray! Let them use the app now.
+                loginUser(username, password)
+
             } else {
                 // Sign up didn't succeed. Look at the ParseException
                 // to figure out what went wrong
@@ -65,6 +68,7 @@ class LoginActivity : AppCompatActivity() {
             }})
         )
     }
+
     private  fun goMainActivity() {
         val intent = Intent(this@LoginActivity, MainActivity::class.java)
         startActivity(intent)
